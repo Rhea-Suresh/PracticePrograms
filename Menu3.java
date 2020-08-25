@@ -34,13 +34,13 @@ public class Menu3
         int a = Math.max (n1,n2);
         int b = Math.min (n1,n2);
         
-        while (a%b != 0)
+        int gcd = 1;
+        for (int i = 2; i<=b; i++)
         {
-            int rem = a%b;
-            a = b;
-            b = rem;
+            if ((a%i == 0) && (b%i == 0))
+                 gcd = i;
         }
-        System.out.println ("The Greatest Common Divisor (GCD) of the two numbers is " +b);
+        System.out.println ("The Greatest Common Divisor (GCD) of the two numbers is " +gcd);
     }
     
     public static void main ()

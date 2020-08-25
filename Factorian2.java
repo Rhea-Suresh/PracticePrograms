@@ -18,6 +18,7 @@ public class Factorian2
         {
             int num = i;
             int sum = 0;
+            
             while (num!=0)
             {
                 int d = num%10;
@@ -27,6 +28,7 @@ public class Factorian2
             
             if (sum == i)
                 System.out.println (i);
+                
         }
     }
     

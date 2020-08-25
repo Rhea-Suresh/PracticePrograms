@@ -1,6 +1,6 @@
 //Program to check if the number is an armstrong number or not
 import java.util.Scanner;
-public class Digits6_Armstrong
+public class Armstrong
 {
     int num;
     void getNumber ()
@@ -10,7 +10,7 @@ public class Digits6_Armstrong
         num = sc.nextInt ();
     }
     
-    double Prod (double a, double b)
+    double Prod (int a, int b)
     {
         double prod = Math.pow(a,b);
         return prod;
@@ -35,7 +35,7 @@ public class Digits6_Armstrong
         {
             d = n2 % 10;
             n2 = n2/10;
-            sum = sum + Prod((double)d,(double)count);
+            sum = sum + Prod(d,count);
         }
         
         return sum;
@@ -56,7 +56,7 @@ public class Digits6_Armstrong
     
     public static void main ()
     {
-        Digits6_Armstrong obj = new Digits6_Armstrong ();
+        Armstrong obj = new Armstrong ();
         obj.getNumber ();
         obj.Calculate ();
         obj.check ();

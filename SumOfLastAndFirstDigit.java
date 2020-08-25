@@ -9,27 +9,19 @@ public class SumOfLastAndFirstDigit
         num = sc.nextInt ();
     }
     
-    int count ()
-    {
-        int count = 0;
-        int n = num;
-        while (n!=0)
-        {
-            n = n/10;
-            count++;
-        }
-        return count;
-    }
-    
     void calculate ()
     {
         int n1 = num;
         int last = n1%10;
         int n2 = num;
-        int c = count() - 1;
-        double first = n2/(Math.pow(10,c));
-        double sum = first + last;
-        System.out.println ("The sum of the first and last digit is " +(int)sum);
+        int first = 1;
+        while (n2 != 0)
+        {
+            first = n2%10;
+            n2 = n2/10;
+        }
+        int sum = first + last;
+        System.out.println ("The sum of the first and last digit is " +sum);
     }
     
     public static void main ()
