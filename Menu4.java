@@ -8,7 +8,7 @@ public class Menu4
         System.out.println ("What would you like to do?");
         System.out.println ("1. To check if the number entered is a prime number or not");
         System.out.println ("2. To check if the number entered is a automorphic number or not");
-        System.out.println ("Enter any numbet other than 1 or 2 to exit");
+        System.out.println ("Enter any number other than 1 or 2 to exit");
     }
     
     void PrimeNumber ()
@@ -18,7 +18,7 @@ public class Menu4
         int num = sc.nextInt ();
         
         int count = 0;
-        for (int i =2; i<num; i++)
+        for (int i = 2; i<num; i++)
         {
             if (num%i == 0)
                 count++; 
