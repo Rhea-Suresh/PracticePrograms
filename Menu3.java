@@ -65,8 +65,7 @@ public class Menu3
             
             System.out.println ("Would you like to continue [y/n]?");
             choice = sc.next().charAt(0);
-        }
-        while (choice == 'y');
+        } while (choice == 'y');
     }
 }
 
