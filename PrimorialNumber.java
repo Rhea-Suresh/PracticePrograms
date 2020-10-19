@@ -14,7 +14,7 @@ public class PrimorialNumber
     
     void Primorial ()
     {
-        int sum = 1;
+        int prod = 1;
         for (int i = 1; i<=n; i++)
         {
             int count = 0;
@@ -26,10 +26,10 @@ public class PrimorialNumber
             }
                 
             if (count == 2)
-                    sum = sum * i;
+                prod = prod * i;
                     
         }
-        System.out.println ("The primorial is " +sum);
+        System.out.println ("The primorial is " +prod);
     }
     
     public static void main ()
