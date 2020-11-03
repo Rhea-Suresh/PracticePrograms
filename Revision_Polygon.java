@@ -24,9 +24,8 @@ public class Revision_Polygon
         }
     }
     
-    void polygon ()
+    void polygon (int n)
     {
-        int n = 3;
         for (int i = 1; i<=n; i++)
         {
             for (int j = 1; j<=i; j++)
