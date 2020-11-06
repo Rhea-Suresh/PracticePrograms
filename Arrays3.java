@@ -18,22 +18,27 @@ public class Arrays3
              
     }
     
-    void display ()
+    int checkPrime (int a)
     {
         int count = 0;
+        for (int i = 2; i<a; i++)
+        {
+            if(a%i == 0)
+               count ++;
+        }
+        return count;
+    }
+    
+    void display ()
+    {
+        System.out.println ("The prime numbers in the array are: ");
         for (int i = 0; i<=sArray.length - 1; i++)
         {
-            
-            for (int j = 2; j<sArray[i]; j++)
-            {
-                if (sArray[i]%j == 0)
-                    count++;
-            }
                     
-            if (count == 0)
+            if (checkPrime (sArray[i]) == 0)
                 System.out.print (sArray[i] + "  ");
-            count = 0;    
-       }
+                
+        }
        
     }
     
