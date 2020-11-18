@@ -1,11 +1,12 @@
-// A program to input an array of 5 elements and print the output after multiplying each element with 2
+// A program to input an array of 5 elements and print the output 
+// after multiplying each element with 2
 import java.util.Scanner;
 public class Arrays2
 {
-    int[] sArray;
+    int[] nArray;
     Arrays2 ()
     {
-        sArray = new int [5];
+        nArray = new int [5];
     }
     
     void initialize ()
@@ -13,16 +14,16 @@ public class Arrays2
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the 5 numbers for the array");
         
-        for (int i = 0; i<=sArray.length - 1; i++)
-             sArray [i] = sc.nextInt ();
+        for (int i = 0; i<=nArray.length - 1; i++)
+             nArray [i] = sc.nextInt ();
              
     }
     
     void display ()
     {
         
-        for (int i = 0; i<=sArray.length - 1; i++)
-             System.out.print (sArray[i] * 2 + " ");
+        for (int i = 0; i<=nArray.length - 1; i++)
+             System.out.print (nArray[i] * 2 + " ");
              
     }
     

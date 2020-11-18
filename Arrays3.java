@@ -2,10 +2,10 @@
 import java.util.Scanner;
 public class Arrays3
 {
-    int sArray [];
+    int nArray [];
     Arrays3 ()
     {
-        sArray = new int [5];
+        nArray = new int [5];
     }
     
     void initialize ()
@@ -13,8 +13,8 @@ public class Arrays3
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the 5 numbers for the array");
         
-        for (int i = 0; i<=sArray.length - 1; i++)
-             sArray[i] = sc.nextInt ();
+        for (int i = 0; i<=nArray.length - 1; i++)
+             nArray[i] = sc.nextInt ();
              
     }
     
@@ -32,11 +32,11 @@ public class Arrays3
     void display ()
     {
         System.out.println ("The prime numbers in the array are: ");
-        for (int i = 0; i<=sArray.length - 1; i++)
+        for (int i = 0; i<=nArray.length - 1; i++)
         {
                     
-            if (checkPrime (sArray[i]) == 0)
-                System.out.print (sArray[i] + "  ");
+            if (checkPrime (nArray[i]) == 0)
+                System.out.print (nArray[i] + "  ");
                 
         }
        

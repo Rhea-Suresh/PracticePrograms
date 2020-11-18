@@ -3,12 +3,12 @@
 import java.util.Scanner;
 public class Arrays4
 {
-    int sArray [];
+    int nArray [];
     int max = 0;
     int min = 9;
     Arrays4 ()
     {
-        sArray = new int [5];
+        nArray = new int [5];
     }
     
     void initialize ()
@@ -16,8 +16,8 @@ public class Arrays4
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the elements of the array");
         
-        for (int i = 0; i<=sArray.length - 1; i++)
-             sArray[i] = sc.nextInt ();
+        for (int i = 0; i<=nArray.length - 1; i++)
+             nArray[i] = sc.nextInt ();
              
     }
     
@@ -39,10 +39,10 @@ public class Arrays4
     {
         int maximum = 0;
         int minimum = 9;
-        for (int i = 0; i<=sArray.length-1; i++)
+        for (int i = 0; i<=nArray.length-1; i++)
         {
-            maximum = Maximum (sArray[i]);
-            minimum = Minimum (sArray[i]);
+            maximum = Maximum (nArray[i]);
+            minimum = Minimum (nArray[i]);
         }
         System.out.println ("The maximum element in the array is " +maximum);
         System.out.println ("The minimum element in the array is " +minimum);

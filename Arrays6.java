@@ -3,12 +3,12 @@
 import java.util.Scanner;
 public class Arrays6
 {
-    int sArray[];
+    int nArray[];
     int x;
     
     Arrays6 ()
     {
-        sArray = new int [5];
+        nArray = new int [5];
     }
     
     void initialize ()
@@ -16,8 +16,8 @@ public class Arrays6
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the 5 elements for the array");
         
-        for (int i = 0; i<=sArray.length-1; i++)
-             sArray[i] = sc.nextInt ();
+        for (int i = 0; i<=nArray.length-1; i++)
+             nArray[i] = sc.nextInt ();
          
         System.out.println ("Enter the value of x");
         x = sc.nextInt ();
@@ -27,11 +27,11 @@ public class Arrays6
     {
         System.out.println ("The elements divisible by x are:");
         
-        for (int j = 0; j<=sArray.length-1; j++)
+        for (int j = 0; j<=nArray.length-1; j++)
         {
             
-            if (sArray[j]%x == 0)
-                System.out.println (sArray[j]);
+            if (nArray[j]%x == 0)
+                System.out.println (nArray[j]);
                 
         }
         
@@ -41,11 +41,11 @@ public class Arrays6
     {
         System.out.println ("The elements not divisible by x are:");
         
-        for (int j = 0; j<=sArray.length-1; j++)
+        for (int j = 0; j<=nArray.length-1; j++)
         {
             
-            if (sArray[j]%x != 0)
-                System.out.println (sArray[j]);
+            if (nArray[j]%x != 0)
+                System.out.println (nArray[j]);
                 
         }
         

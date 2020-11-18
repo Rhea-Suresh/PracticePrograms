@@ -3,11 +3,11 @@
 import java.util.Scanner;
 public class Arrays5 
 {
-    int sArray [];
+    int [] nArray;
     
     Arrays5 ()
     {
-        sArray = new int [10];
+        nArray = new int [10];
     }
     
     void initialize ()
@@ -15,8 +15,8 @@ public class Arrays5
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the 10 elements for the array");
         
-        for (int i = 0; i<=sArray.length-1; i++)
-            sArray[i] = sc.nextInt ();
+        for (int i = 0; i<=nArray.length-1; i++)
+            nArray[i] = sc.nextInt ();
             
     }
     
@@ -24,11 +24,11 @@ public class Arrays5
     {
         System.out.println ("The even elements in the array are:");
         
-        for (int i = 0; i<=sArray.length-1; i++)
+        for (int i = 0; i<=nArray.length-1; i++)
         {
             
-            if (sArray[i]%2 == 0)
-                System.out.println (sArray[i]);
+            if (nArray[i]%2 == 0)
+                System.out.println (nArray[i]);
                 
         }
     }
@@ -37,11 +37,11 @@ public class Arrays5
     {
         System.out.println ("The odd elements in the array are:");
         
-        for (int i = 0; i<=sArray.length-1; i++)
+        for (int i = 0; i<=nArray.length-1; i++)
         {
             
-            if (sArray[i]%2 != 0)
-                System.out.println (sArray[i]);
+            if (nArray[i]%2 != 0)
+                System.out.println (nArray[i]);
                 
         }
     }
