@@ -25,7 +25,7 @@ public class Arrays8
     {
         int temp = 0;
         
-        for (int i = 0; i<=nArray.length-2; i++)
+        for (int i = 0; i<=nArray.length-1; i++)
         {
             
             for (int j = 0; j<=nArray.length-2; j++)

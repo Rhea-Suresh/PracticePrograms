@@ -27,7 +27,7 @@ public class Arrays7_BubbleSort
     void arrange () //Ascending Order
     {
         int temp;
-        for (int i = 0; i<=nArray.length-2; i++)
+        for (int i = 0; i<=nArray.length-1; i++)
         {
             for (int j = 0; j<=nArray.length - 2; j++)
             {
@@ -37,9 +37,9 @@ public class Arrays7_BubbleSort
                     nArray[j] = nArray[j+1];
                     nArray[j+1] = temp;
                 }
+            }
                 System.out.print ("Pass/Iteration: " +(i+1)+ " ==> ");
                 display ();
-            }
         }
     }
     
