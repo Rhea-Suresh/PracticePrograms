@@ -1,5 +1,5 @@
 // Program to accept an integer array and its size as its arguments and 
-//swap the elements of every even location with its following odd location
+// swap the elements of every even location with its following odd location
 import java.util.*;
 public class Arrays14_Swap
 {

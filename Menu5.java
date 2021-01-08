@@ -20,6 +20,7 @@ public class Menu5
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the number whose natural logarith needs to be found");
         double num = sc.nextDouble ();
+        
         double log = Math.log(num);
         System.out.println ("The natural logaarithm of the number is " +log);
     }
@@ -29,6 +30,7 @@ public class Menu5
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the number whose absolute value needs to be found");
         double num = sc.nextDouble ();
+        
         double a = Math.abs(num);
         System.out.println ("The absolute value of the number is " +a);
     }
@@ -38,6 +40,7 @@ public class Menu5
         Scanner sc = new Scanner (System.in);
         System.out.println ("Enter the number whose square root needs to be found");
         int num = sc.nextInt ();
+        
         double sq = Math.sqrt(num);
         System.out.println ("The absolute value of the number is " +sq);
     }
