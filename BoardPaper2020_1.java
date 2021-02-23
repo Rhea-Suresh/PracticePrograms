@@ -22,7 +22,7 @@ public class BoardPaper2020_1
     
     void calculate ()
     {
-        if (car_type == "AC")
+        if (car_type.equalsIgnoreCase("AC") == true)
         {
             if (km<5)
                bill = 150;

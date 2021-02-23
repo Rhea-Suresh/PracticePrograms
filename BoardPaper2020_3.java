@@ -35,4 +35,10 @@ public class BoardPaper2020_3
         System.out.println ("The sum of the even digits is " +sum);
     }
     
+    public static void main ()
+    {
+        BoardPaper2020_3 obj = new BoardPaper2020_3 ();
+        obj.Number (7647377, 7);
+        obj.Number (678342);
+    }
 }

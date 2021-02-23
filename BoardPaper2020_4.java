@@ -20,12 +20,15 @@ public class BoardPaper2020_4
     void Value ()
     {
         Scanner sc = new Scanner (System.in);
-        System.out.println ("Enter the value of a from 1.0 to 20.0");
-        double a = sc.nextDouble ();
+        System.out.println ("Enter the value of 'a' from 1.0 to 20.0");
         double b = 3.0;
         
-        double c = Math.pow(a,2) + (2*a*b);
-        System.out.println ("The value of c is " +c);
+        for (double a = sc.nextDouble(); a<=20.0; a+= 2.0)
+        {
+            double c = Math.pow(a,2) + (2*a*b);
+            System.out.println ("The value of c is " +c);
+        }
+        
     }
     
     void Pattern ()
