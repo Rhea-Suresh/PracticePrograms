@@ -72,6 +72,7 @@ public class BoardPaper2020_4
                 
             System.out.println ("Do you want to continue [y/n]?");
             choice = sc.next().charAt(0);
+  
         }while (choice == 'y');
     }
 }
